@@ -2,9 +2,11 @@ import React from "react";
 
 const Navbar = () => {
     return (
-    <div>
-        меню
-    </div>
+    <>
+        <nav>
+            Меню
+        </nav>
+    </>
     )
 }
 export default Navbar;
