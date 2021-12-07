@@ -1,5 +1,5 @@
-import React, { Component } from "react";
 
+import React, { Component } from "react";
 class Content extends Component {   
 
     render() {
@@ -19,6 +19,7 @@ class Content extends Component {
                         </div>
                     </div>
                 </div>
+                <div className='content_main_img'></div>
             </div>
         )
     }
