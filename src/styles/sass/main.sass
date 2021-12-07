@@ -1,11 +1,29 @@
-$color_grey: #C4C4C4;
-$color_black: #000;
-$color_sand: #CFA688;
+$grey: #C4C4C4;
+$black: #000;
+$sand: #CFA688;
+$main_font_family: montserrat;
+*
+    padding: 0px
+    margin: 0px
+    box-sizing: border-box
+    list-style: none
+    text-decoration: none
+    
+a
+    text-decoration: none
+    color: inherit
 
-.bgMainPage
+.content
+    widht: 100vw
+    height: 100vh
+
+.bg
+    position: absolute;
+    top: 0
+    z-index: -1
     width: 100%
     height: 100vh
-    background: url('../images/Background.png')
+    background: center url('../images/Background.png') 
     &:before
         content: ''
         position: absolute
@@ -13,11 +31,49 @@ $color_sand: #CFA688;
         left: 0
         right: 0
         bottom: 0
-        background: #2c2622c2
+        background: #181513c2
 
-.mainPage
-    color: $color_grey
-    position: absolute
-    top: 0
-    left: 0
-    z-index: 2
+.header
+    z-index: 4
+    padding-top: 34px
+    font-family: $main_font_family
+    color: $grey
+    &_logo
+        &_text
+            padding-top: 19px
+    &_menu
+        font-size: 12px
+
+.content_main
+    padding-top: 133px
+    height: 100%
+    color: $grey
+    &_title
+        font-family: Labor Union
+        font-size: 88px
+        color: $sand
+        text-align: center
+        font-weight: 400
+        font-style: normal
+    &_data
+        font-family: Labor Union
+        font-size: 46px
+        line-height: 55px
+        color: white
+    &_text
+        font-family: $main_font_family
+        color: white
+    &_btn
+        font-family: $main_font_family
+        border: none
+        width: 284px
+        padding: 20px 60px
+        background: #0E0E0E
+        color: $grey
+        margin-top: 58px
+
+
+.footer
+    padding-bottom: 25px
+    color: $grey
+    line-height: 0px
