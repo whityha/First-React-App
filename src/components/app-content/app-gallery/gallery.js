@@ -1,13 +1,17 @@
 import React, {Component} from "react";
-
-class Gallery extends Component {
+import GalleryItem from '../app-gallery/galleryItem'
+class Gallery extends Component { 
 
     render() {
-        const classLists = 'container';
         let {active} = this.props
+       
         if(active) {
             return (
-            <div className={classLists}>)))))</div>
+            <div className='gallery opacity'>
+                <ul className='images_list'>
+                    <GalleryItem/>
+                </ul>
+            </div>
             )
         }
         

@@ -6,7 +6,7 @@ const Header = ({changeActive}) => {
         <div className='header'>
             <div className='container'>
                 <div className='row'>              
-                <Logo/>
+                <Logo changeActive={changeActive}/>
                 <Navbar changeActive={changeActive}/>
                 </div>
             </div>

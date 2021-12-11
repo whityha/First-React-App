@@ -13,9 +13,7 @@ a
     text-decoration: none
     color: inherit
 
-.content
-    widht: 100vw
-    height: 100vh
+
 
 .bg
     position: absolute;
@@ -41,64 +39,127 @@ a
     &_logo
         &_text
             padding-top: 19px
+        img
+            opacity: .7
+            transition: 0.2s
+            &:hover
+                opacity: 1
+                cursor: pointer
     &_menu
         font-weight: 300
         letter-spacing: 2px
         font-size: 12px
 
 .opacity
-    animation: 1s ease .5s opacity forwards;
+    animation: .7s ease .3s opacity forwards;
+.content
+    widht: 100vw
+    height: 100vh
+    .content_main
+        opacity: 0
+        padding-top: 120px
+        height: 100%
+        color: $grey 
+        &_title
+            font-family: Labor Union
+            font-size: 80px
+            color: $sand
+            text-align: center
+            font-weight: 400
+            font-style: normal
+        &_data
+            font-family: Labor Union
+            font-size: 46px
+            line-height: 55px
+            color: white
+        &_text
+            font-family: $main_font_family
+            color: white
+            
+        &_btn
+            font-weight: 300
+            letter-spacing: 4px
+            font-size: 18px
+            font-family: $main_font_family
+            border: none
+            width: 284px
+            padding: 20px 50px
+            background: #0E0E0E
+            color: $grey
+            margin-top: 58px
+            transition: 0.2s
+            &:hover
+                transform: scale(1.03)
+            
+        &_img
+            position: absolute
+            bottom: 0
+            left: 50%
+            transform: translateX(-50%)
+            width: 800px
+            height: 280px
+            background: no-repeat top url("../images/sources/Classic 500.png")
+    .gallery        
+        height: 100%
+        opacity: 0
+        .images_list
+            height: 100%
+            position: relative
+            display: block
+            .image_item
+                position: absolute            
+                img
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    filter: grayscale(100%)
+                    transition: 1s
+                    object-fit: cover
+                    &:hover
+                        filter: none
+            .first
+                width: 20%
+                height: 20%
+                left: 0%
+                top: 25%
+            .second
+                width: 30%
+                height: 30%
+                left: 30%
+                top: 15%
+            .three
+                width: 30%
+                height: 30%
+                left: 15%
+                top: 40%
+            .four
+                width: 30%
+                height: 30%
+                left: 40%
+                top: 55%
+            .five
+                width: 25%
+                height: 25%
+                left: 55%
+                top: 5%
+            .six
+                width: 30%
+                height: 30%
+                left: 60%
+                top: 35%
+            .seven
+                width: 20%
+                height: 20%
+                right: 0%
+                top: 60%
 
-.content_main
-    opacity: 0
-    padding-top: 120px
-    height: 100%
-    color: $grey 
-    &_title
-        font-family: Labor Union
-        font-size: 80px
-        color: $sand
-        text-align: center
-        font-weight: 400
-        font-style: normal
-    &_data
-        font-family: Labor Union
-        font-size: 46px
-        line-height: 55px
-        color: white
-    &_text
-        font-family: $main_font_family
-        color: white
-        
-    &_btn
-        font-weight: 300
-        letter-spacing: 4px
-        font-size: 18px
-        font-family: $main_font_family
-        border: none
-        width: 284px
-        padding: 20px 50px
-        background: #0E0E0E
-        color: $grey
-        margin-top: 58px
-        transition: 0.2s
-        &:hover
-            transform: scale(1.03)
-        
-    &_img
-        position: absolute
-        bottom: 0
-        left: 50%
-        transform: translateX(-50%)
-        width: 800px
-        height: 280px
-        background: no-repeat top url("../images/sources/Classic 500.png")
 
 
 .footer
     padding-bottom: 25px
     color: $grey
     line-height: 0px
+    margin-top: 10px
 
 
 @keyframes opacity

@@ -9,17 +9,17 @@ export default class App extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      active: [true, false, false, false, false]
+      activeContent: [true, false, false, false, false, false]
     }
 
     this.changeActiveContent = this.changeActiveContent.bind(this)
   }
 
   changeActiveContent(i) {
-    let arr = [false, false, false, false, false];
-    arr[i] = true
+    let newActiveContent = [false, false, false, false, false, false];
+    newActiveContent[i] = true
     this.setState({
-      active: arr  
+      activeContent: newActiveContent  
     })
   }
 
@@ -30,7 +30,7 @@ export default class App extends Component {
           changeActive = {this.changeActiveContent}
           />    
           <Content 
-          activeItems = {this.state.active}
+          activeContent = {this.state.activeContent}
           />       
           <Footer/>
           <Bg/>
