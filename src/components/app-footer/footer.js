@@ -1,6 +1,4 @@
 import React from "react";
-// const bootstrap = require('bootstrap')
-import bootstrap from 'bootstrap'
 
 const Footer = () => {
     return (

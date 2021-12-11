@@ -1,13 +1,13 @@
 import Logo from './logo/logo';
 import Navbar from './navbar/navbar';
 
-const Header = () => {
+const Header = ({changeActive}) => {
     return (        
         <div className='header'>
             <div className='container'>
                 <div className='row'>              
                 <Logo/>
-                <Navbar/>
+                <Navbar changeActive={changeActive}/>
                 </div>
             </div>
         </div> 
